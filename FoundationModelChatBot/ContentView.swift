@@ -100,11 +100,16 @@ struct ContentView: View {
         messages.append(userMessage)
         inputText = ""
         
+        let prompt = "Previous messages: \(messages.compactMap { "\(($0.isUser ? "User:" : "ChatBot (you):")) \($0.text)" }) New user message: \(userMessage.text)"
+        print(prompt)
+        
         guard let stream = session?.streamResponse(
             generating: String.self,
             options: GenerationOptions(sampling: .greedy),
             includeSchemaInPrompt: false,
-            prompt: { Prompt(userMessage.text) }
+            prompt: {
+                Prompt(prompt)
+            }
         ) else { return }
 
         for try await partialResponse in stream {
