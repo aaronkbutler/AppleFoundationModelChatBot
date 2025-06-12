@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import SwiftData
+import Foundation
 
 @main
 struct FoundationModelChatBotApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChatListView()
+                .modelContainer(for: [Chat.self, Message.self])
         }
     }
 }

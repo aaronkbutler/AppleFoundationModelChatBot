@@ -1,0 +1,47 @@
+{
+  "fill" : {
+    "linear-gradient" : [
+      "gray:0.24257,1.00000",
+      "gray:0.00000,1.00000"
+    ]
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "blend-mode" : "normal",
+          "fill" : {
+            "linear-gradient" : [
+              "display-p3:1.00000,0.20713,0.20390,1.00000",
+              "srgb:0.99942,0.76608,0.00000,1.00000"
+            ]
+          },
+          "image-name" : "A_vector_icon_in_black_and_white_features_a_speech.png",
+          "name" : "A_vector_icon_in_black_and_white_features_a_speech",
+          "opacity" : 1,
+          "position" : {
+            "scale" : 0.85,
+            "translation-in-points" : [
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}
